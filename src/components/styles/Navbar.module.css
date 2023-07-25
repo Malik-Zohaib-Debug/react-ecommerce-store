@@ -1,0 +1,38 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    width: 80%;
+}
+
+.Navbar__logo{
+    width: 200px;
+    object-fit: contain;
+}
+
+.Navbar__sections{
+    display: flex;
+}
+
+.Navbar__sections > p {
+    padding-right: 20px;
+}
+
+.Navbar__advanced-sections{
+    display: flex;
+    align-items: center;
+}
+
+.cart-logo{
+    width: 30px;
+    object-fit: contain;
+    margin: 0 20px;
+}
+
+.login-logo{
+    width: 30px;
+    object-fit: contain;
+}
