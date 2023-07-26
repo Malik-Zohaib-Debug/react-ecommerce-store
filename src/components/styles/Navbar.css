@@ -17,7 +17,9 @@
     display: flex;
 }
 
-.Navbar__sections > p {
+span {
+    color: black;
+    text-decoration: underline;
     padding-right: 20px;
 }
 

@@ -1,0 +1,141 @@
+.Home{
+    max-width: 1500px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.Home__banner{
+    width: 100%;
+}
+
+.home__banner-content{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 44px;
+    color: black;
+    font-weight: bolder;
+}
+
+.home__banner-content > button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+
+.home__banner-content > button:hover {
+    background-color: rgb(104, 26, 26);
+    transform: scale(1.1);
+}
+
+.Home__brands{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.Home__brands > img{
+    width: 130px;
+    object-fit: contain;
+    display: flex;
+}
+
+.brands__logo:hover{
+    transform: scale(1.5);
+}
+
+.Home__customer-experience{
+    max-width: 100%;
+}
+
+.Home__customer-experience-header{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 5%;
+    align-items: center;
+}
+
+.Home__customer-experience-header > p {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.Home__about-customer > span {
+    padding: 33px 3px;
+    background-color: black;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.Home__about-customer > p {
+    color: rgb(105, 104, 104);
+    margin-left: 5%;
+}
+
+.Home__customer-order-process{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    max-width: 100%;
+}
+
+.Home__process {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.Home__process > img{
+    object-fit: contain;
+    background-color: rgb(235, 235, 235);
+    align-items: center;
+    padding: 10px 5px;
+    width: 34px;
+}
+
+.Home__process > img:hover {
+    transform: scale(1.5);
+}
+
+.Home__process > h1 {
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.Home__process > p {
+    width: 80%;
+    font-size: 14px;
+    color: rgb(105, 104, 104);
+}
+
+.Home__currated-picks{
+    margin-top: 5%;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.category-fashion{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.fashion-img{
+    object-fit: contain;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 15px;
+    transition:cubic-bezier(0.215, 0.610, 0.355, 1);
+    cursor: pointer;
+}
+
+.category-fashion > .fashion > img:hover {
+    opacity: 0.5;
+}

@@ -10,9 +10,9 @@ export default function Navbar(){
         <header className="Navbar">
             <Link to="/"><img src={logo} alt="logo" className="Navbar__logo"/></Link>
             <div className="Navbar__sections">
-                <Link to="/mens"><span>Men's</span></Link>
-                <Link to="/womens"><span>Women's</span></Link>
-                <Link to="/electronics"><span>Electronics</span></Link>
+                <Link to="/mens"><span className="Navbar__section">Men's</span></Link>
+                <Link to="/womens"><span className="Navbar__section">Women's</span></Link>
+                <Link to="/electronics"><span className="Navbar__section">Electronics</span></Link>
             </div>
             <div className="Navbar__advanced-sections">
                 <div className="Navbar__search">
