@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/PromotionBanner.module.css';
+import './styles/PromotionBanner.css';
 
 export default function PromotionBanner(){
     return(

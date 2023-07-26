@@ -1,5 +1,6 @@
 import React from "react";
 import {Routes, Route} from 'react-router-dom';
+import Home from "./sections/Home";
 import Mens from "./sections/Mens";
 import Womens from "./sections/Womens";
 import Electronics from "./sections/Electronics";
@@ -9,6 +10,7 @@ import ProductDetail from "./sections/ProductDetail";
 export default function Section(){
     return (
         <Routes>
+            <Route path="/" Component={Home}/>
             <Route path="/mens" Component={Mens}/>
             <Route path="/womens" Component={Womens}/>
             <Route path="/electronics" Components={Electronics}/>

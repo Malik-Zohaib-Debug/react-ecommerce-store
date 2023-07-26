@@ -2,16 +2,17 @@ import React from "react";
 import logo from './assets/logo.jpg';
 import cart from './assets/cart.png';
 import login from './assets/login-logo.png';
-import './styles/Navbar.module.css';
+import { Link } from "react-router-dom";
+import './styles/Navbar.css';
 
 export default function Navbar(){
     return(
         <header className="Navbar">
-            <img src={logo} alt="logo" className="Navbar__logo"/>
+            <Link to="/"><img src={logo} alt="logo" className="Navbar__logo"/></Link>
             <div className="Navbar__sections">
-                <p>Men's</p>
-                <p>Women's</p>
-                <p>Electronics</p>
+                <Link to="/mens"><span>Men's</span></Link>
+                <Link to="/womens"><span>Women's</span></Link>
+                <Link to="/electronics"><span>Electronics</span></Link>
             </div>
             <div className="Navbar__advanced-sections">
                 <div className="Navbar__search">

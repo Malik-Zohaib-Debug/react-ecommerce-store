@@ -11,7 +11,7 @@ function App(){
     <div>
       <PromotionBanner />
       <Navbar />
-    </div>
+      </div>
   );
 }
 
