@@ -1,5 +1,6 @@
 import React from 'react';
-import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom';
+import GlobalContext from './components/GlobalContext';
 import './App.css'; 
 
 //components
@@ -11,8 +12,12 @@ function App(){
   return(
     <div>
       <PromotionBanner />
-      <Navbar />
-      <Section />
+      <GlobalContext>
+        <Router>
+          <Navbar />
+          <Section />
+        </Router>
+      </GlobalContext>
     </div>
   );
 }

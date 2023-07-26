@@ -1,8 +1,15 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { ProductContext } from '../GlobalContext'
 
 function Mens() {
+  const products = useContext(ProductContext);
+
+  console.log(products);
+
   return (
-    <div>Mens</div>
+    <div>
+
+    </div>
   )
 }
 
