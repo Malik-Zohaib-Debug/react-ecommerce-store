@@ -1,4 +1,5 @@
 import React, {useContext} from 'react'
+import { Link } from 'react-router-dom';
 import { ProductContext } from '../GlobalContext'
 import "../styles/Womens.css";
 
@@ -27,13 +28,15 @@ function Womens() {
       <div className='Womens-portion'>
         <div className='products'>
           {womensProducts.map(womenProduct => (
-            <div className='product-card'>
-              <img className='product-image' src={womenProduct.image} alt={womenProduct.title}/>
-              <div className='product-detail'>
-                <p className='product-name'>{womenProduct.title}</p>
-                <p className='product-price'>${womenProduct.price}</p>
+            <Link to={`/womens/${womenProduct.id}`}>
+              <div className='product-card'>
+                <img className='product-image' src={womenProduct.image} alt={womenProduct.title}/>
+                <div className='product-detail'>
+                  <p className='product-name'>{womenProduct.title}</p>
+                  <p className='product-price'>${womenProduct.price}</p>
+                </div>
               </div>
-          </div>
+            </Link>
           ))}
   
         </div>

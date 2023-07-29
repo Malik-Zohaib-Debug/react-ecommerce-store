@@ -12,7 +12,9 @@ export default function Section(){
         <Routes>
             <Route path="/" Component={Home}/>
             <Route path="/mens" Component={Mens}/>
+            <Route path="/mens/:id" Component={ProductDetail} />
             <Route path="/womens" Component={Womens}/>
+            <Route path="/womens/:id" Component={ProductDetail} />
             <Route path="/electronics" Components={Electronics}/>
             <Route path="/electonics/:id" Component={ProductDetail}/>
             <Route path="/cart" Component={Cart}/>
