@@ -10,6 +10,7 @@ const initialState = {
 export const ProductContext = createContext(initialState);
 
 export default function GlobalContext({ children }) {
+  const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
@@ -19,7 +20,7 @@ export default function GlobalContext({ children }) {
         .then((res) => res.json())
         .then((json) => setData(json));
     }
-
+    setLoading(false);
     getData();
   }, []);
 
@@ -37,6 +38,7 @@ export default function GlobalContext({ children }) {
       products: state.products,
       basket: state.basket,
       total: state.total,
+      loading: loading,
       addToCart
     }}>
       {children}
